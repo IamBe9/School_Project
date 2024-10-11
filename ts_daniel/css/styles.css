@@ -1,0 +1,175 @@
+/* 
+COLORS
+#3f51b5
+#2f0099
+*/
+
+body {
+    font-family: 'Montserrat',sans-serif;
+    background-image: url("../img/kratka.svg"), linear-gradient(#cccccc,white);
+    background: url("../img/gif.gif");
+}
+
+.header {
+    background: #280086;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 2px solid #280086;
+
+    box-shadow: 0px 10px 20px -4px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 10px 20px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 10px 20px -4px rgba(0,0,0,0.75);
+}
+
+.header .logo img {
+    width: 180px;
+}
+
+.title h1 {
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.subTitle h2 {
+    color:  white;
+    font-size: 18px;
+}
+
+.hours, .timer, .lessons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100px;
+    width: 100%;
+    background: #F5F5F5;
+    margin: 40px 20px;
+    padding: 20px;
+
+    box-shadow: 0px 0px 12px -6px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 0px 12px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 12px -6px rgba(0,0,0,0.75);
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container h3 {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px 0;
+    color: black;
+}
+
+.container .hours p {
+    color:#757575;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.container .hours span {
+    display: inline-block;
+    width: 42px;
+}
+
+.container .timer .time {
+    font-size: 44px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container .timer p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.container .lessons p {
+    color:#757575;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    color: white;
+    
+
+    box-shadow: 0px 17px 26px -6px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 17px 26px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 17px 26px -6px rgba(0,0,0,0.75);
+}
+
+.footer p a {
+    color: white;
+}
+
+.footer > a {
+    background: whitesmoke;
+    text-decoration: none;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 20px;
+
+    -webkit-box-shadow: 0px 0px 26px -8px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 26px -8px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 26px -8px rgba(0,0,0,0.75);
+}
+
+.footer > a:hover {
+    background: whitesmoke;
+    -webkit-box-shadow: 0px 0px 26px 3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 26px 3px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 26px 3px rgba(0,0,0,0.75);
+}
+
+/* RWD */
+
+@media only screen and (max-width: 620px) {
+    .header {
+        flex-direction: column;
+    }
+
+    .header .titles {
+        margin-top: 10px;
+    }
+    .container {
+        flex-direction: column;
+    }
+    .hours, .timer, .lessons {
+        margin: 0;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+    }
+    .hours, .lessons {
+        order: 1;
+    }
+    .footer p {
+        width: 50%;
+    }
+}
+
+
+/* DLA FUNKCJI JS UKRYWANIE DNI TYG */
+
+#day-1,
+#day-2,
+#day-3,
+#day-4,
+#day-5, 
+#weekend {
+    display: none;
+}
+
+.current { 
+    font-weight: bold;
+    color: black !important;
+}

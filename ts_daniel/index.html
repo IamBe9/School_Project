@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technischools | Dzwonek szkolny</title>
+    <link rel="shortcut icon" href="./img/favicon.ico"/>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./css/reset.css">
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
+</head>
+<body onload="setTime(); setTimer();">
+    <div class="header">
+        <div class="logo">
+            <img src="./img/logo.png" alt="Technischools logo">
+        </div>    
+
+        <div class="titles">
+
+            <div class="title">
+                <h1>Dzwonek szkolny</h1>
+            </div>
+            
+            <div class="subTitle">
+                <h2>Aplikacja uczniowska</h2>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="hours">
+            <h3>Godziny</h3>
+            <div>
+                <p id="l-1"><span>08:55</span> - 09:40</p> 
+                <p id="l-2"><span>09:50</span> - 10:35</p> 
+                <p id="l-3"><span>10:50</span> - 11:35</p> 
+                <p id="l-4"><span>11:45</span> - 12:30</p> 
+                <p id="l-5"><span>13:00</span> - 13:45</p> 
+                <p id="l-6"><span>14:00</span> - 14:45</p> 
+                <p id="l-7"><span>14:55</span> - 15:40</p> 
+                <p id="l-8"><span>15:45</span> - 16:30</p>
+            </div>
+        </div>
+
+        <div class="timer">
+            <h3>Czasomierz</h3>
+            
+            <div class="time">
+                <span id="currentTime">...</span>
+            </div>
+
+            <p id="lesson-info">...</p>
+            <p id="counter">...</p>
+        </div>
+
+        <div class="lessons">
+            <div id="day-1">
+                <h3>Poniedziałek</h3>
+                <div>
+                    <p id="day-1-s-1">J. Polski</p>
+                    <p id="day-1-s-2">J. Polski</p>
+                    <p id="day-1-s-3">Fizyka</p>
+                    <p id="day-1-s-4">Historia</p>
+                    <p id="day-1-s-5">Historia</p>
+                    <p id="day-1-s-6">WF</p>
+                    <p id="day-1-s-7">Programowanie app Internetowej</p>
+                    <p id="day-1-s-8">Programowanie app Internetowej</p>
+                </div>
+            </div>
+            <div id="day-2">
+                <h3>Wtorek</h3>
+                <div>
+                    <p id="day-2-s-1">Godzina Wychowawacza</p>
+                    <p id="day-2-s-2"id="s-1">Podstawy Programowania</p>
+                    <p id="day-2-s-3">Podstawy Programowania</p>
+                    <p id="day-2-s-4">Matematyka</p>
+                    <p id="day-2-s-5">Podstawy Programowania</p>
+                    <p id="day-2-s-6">Podstawy Programowania</p>
+                    <p id="day-2-s-7">Programowanie app Internetowej</p>
+                    <p id="day-2-s-8">Programowanie app Internetowej</p>
+                </div>
+            </div>
+            <div id="day-3">
+                <h3>Środa</h3>
+                <div>
+                    <p id="day-3-s-1">Grafika</p>
+                    <p id="day-3-s-2">Chemia</p>
+                    <p id="day-3-s-3">Informatyka</p>
+                    <p id="day-3-s-4">Etyka</p>
+                    <p id="day-3-s-5">J. Angielski</p>
+                    <p id="day-3-s-6">J. Angielski</p>
+                    <p id="day-3-s-7">Wf</p>
+                    <p id="day-3-s-8">Wf</p>
+                </div>
+            </div>
+            <div id="day-4">
+                <h3>Czwartek</h3>
+                <div>
+                    <p id="day-4-s-1">Matematyka</p>
+                    <p id="day-4-s-2">Matematyka</p>
+                    <p id="day-4-s-3">Francuski</p>
+                    <p id="day-4-s-4">Francuski</p>
+                    <p id="day-4-s-5">Biologia</p>
+                    <p id="day-4-s-6">Biologia</p>
+                    <p id="day-4-s-7">Programowanie app Internetowej</p>
+                    <p id="day-4-s-8">Programowanie app Internetowej</p>
+                </div>
+            </div>
+            <div id="day-5">
+                <h3>Piątek</h3>
+                <div>
+                    <p id="day-5-s-1">J. Chiński</p>
+                    <p id="day-5-s-2">Geografia</p>
+                    <p id="day-5-s-3">Programowanie app Internetowej</p>
+                    <p id="day-5-s-4">Programowanie app Internetowej</p>
+                    <p id="day-5-s-5">Etyka</p>
+                    <p id="day-5-s-6">J. Polski</p>
+                    <p id="day-5-s-7">Matematyka</p>
+                    <p id="day-5-s-8">Matematyka</p>
+                </div>
+            </div>
+
+            <div id="weekend">
+                <p>Weekend!</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <p>Made by <a href="https://technischools.com/" target="_blank">Technischools</a></p>
+    </div>
+
+    <script src="./js/scripts.js"></script>
+
+</body>
+</html>

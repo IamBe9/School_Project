@@ -1,0 +1,3 @@
+1) Po zmianie lekcji na przerwe timer wchodzi na wartość ujemną
+
+2) Po zmianie lekcji na przerwę mamy cały czas pogrubione godziny lekcyjne + nazwę przedmiotu
