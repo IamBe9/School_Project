@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EgzaminINF04.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            BackgroundColor="LightGreen">
+
+            <Label
+                Text="Wizyta u weterynarza"
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="32"
+                BackgroundColor="SeaGreen"
+                TextColor="Black"
+                HorizontalOptions="Fill"
+                />
+            <Entry Text="Imie i nazwisko wlascicela"/>
+
+            <Label
+                Text="Gatunek"
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="16"
+                HorizontalOptions="Start" />
+            <Label
+                Text="Pies"
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="16"
+                HorizontalOptions="Start" />
+            <Label
+                Text="Kot"
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="16"
+                HorizontalOptions="Start" />
+            <Label
+                Text="Świnka Morska"
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="16"
+                HorizontalOptions="Start" />
+
+            <Slider HorizontalOptions="Fill"/>
+
+            <Entry Text="Cel Wizyty" HorizontalOptions="Fill"/>
+            <Entry Text="16:00" HorizontalOptions="Fill"/>
+            <Button
+                Text="Ok"
+                HorizontalOptions="Start"
+                />
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

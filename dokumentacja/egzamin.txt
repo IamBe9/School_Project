@@ -1,0 +1,4 @@
+-Windows
+-Visual Studio Code & Visual Studio 2022
+-Python & C#
+-Emulator systemu android
